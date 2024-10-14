@@ -1,0 +1,197 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Light background color for the dashboard */
+    min-height: 100vh;
+}
+
+/* General dashboard container styling */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #cdaeae; /* Solid background for the dashboard */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    position: relative; /* Ensure it’s positioned above the background */
+    z-index: 2; /* Higher z-index to sit above the background */
+    opacity: 1;
+}
+
+/* Reset body background for dashboard pages */
+body {
+    background: transparent; /* Remove the background for the body in dashboard */
+    opacity: 1;
+}
+
+/* Other styles remain unchanged... */
+
+
+/* Dashboard heading */
+.dashboard-container h2 {
+    font-size: 32px;
+    color: #bd4141;
+    margin-bottom: 20px;
+}
+
+/* Dashboard menu: display flex for menu items */
+.dashboard-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for each dashboard item */
+.dashboard-item {
+    flex: 1;
+    padding: 20px;
+    height: 250px;
+    border: 1px solid #cb6f6f;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+
+}
+
+.dashboard-item:hover {
+    background-color: #f0ecec;
+    transform: scale(1.05); /* Slight scaling on hover for interactivity */
+}
+
+.dashboard-item h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.dashboard-item p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .dashboard-menu {
+        flex-direction: column;
+    }
+
+    .dashboard-item {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* MilkDetails Form Container */
+.milk-details-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f0ecec; /* Light background for form */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for MilkDetails */
+.milk-details-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #bd4141;
+    margin-bottom: 20px;
+}
+
+/* Form element styling */
+.milk-details-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels for form inputs */
+.milk-details-container label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Inputs and Select Boxes */
+.milk-details-container input {
+    padding: 10px;
+    border: 1px solid #cb6f6f;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+/* On focus, change border color */
+.milk-details-container input:focus {
+    border-color: #bd4141;
+    outline: none;
+}
+
+/* Submit Button */
+.milk-details-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #bd4141;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for button */
+.milk-details-container button:hover {
+    background-color: #a83737;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .milk-details-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .milk-details-container h2 {
+        font-size: 24px;
+    }
+
+    .milk-details-container input {
+        font-size: 14px;
+    }
+
+    .milk-details-container button {
+        font-size: 16px;
+    }
+}
+
+
+/* Logout Button */
+.logout-button {
+    position: absolute; /* Position it absolutely */
+    top: 20px; /* Space from the top */
+    left: 20px; /* Space from the left */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #bd4141; /* Match the theme color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 3; /* Ensure it appears above other elements */
+}
+
+/* Hover effect for logout button */
+.logout-button:hover {
+    background-color: #a83737;
+}

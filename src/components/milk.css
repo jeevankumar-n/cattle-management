@@ -1,0 +1,185 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Reset body background for dashboard pages */
+body {
+    background: transparent; /* Remove the background for the body in dashboard */
+    opacity: 1;
+    min-height: 100vh; /* Ensure body covers the full height */
+}
+
+/* MilkDetails Form Container */
+.milk-details-container ,
+.health-details-container,
+.maternity-details-container {
+    max-width: 600px; /* Maximum width for the container */
+    margin: 10px auto; /* Center the container */
+    padding: 30px; /* Padding around the content */
+    background-color: #796262; /* Light background for form */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Position context for z-index */
+    z-index: 2; /* Ensure this is above the background */
+}
+
+/* Heading for MilkDetails */
+.milk-details-container h2,
+.health-details-container h2,
+.maternity-details-container h2 {
+    text-align: center; /* Center the heading */
+    font-size: 28px; /* Font size for heading */
+    color: #bd4141; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form element styling */
+.milk-details-container form,
+.health-details-container form,
+.maternity-details-container form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 8px; /* Space between items */
+}
+
+/* Style for each field (label + input) */
+.form-field {
+    display: flex; /* Flexbox for field layout */
+    justify-content: space-between; /* Space between label and input */
+    align-items: center; /* Center items vertically */
+}
+
+/* Labels for form inputs */
+.milk-details-container label,
+.health-details-container label,
+.maternity-details-container label {
+    font-size: 16px; /* Font size for labels */
+    color: #232020; /* Color for labels */
+    margin-bottom: 0; /* Remove space below labels */
+    width: 70%; /* Adjusted width for labels */
+}
+
+/* Inputs and Select Boxes */
+.milk-details-container input,
+.health-details-container input,
+.maternity-details-container input {
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #cb6f6f; /* Border color */
+    border-radius: 10px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for inputs */
+    background-color: #fff; /* Background color for inputs */
+    transition: border-color 0.3s; /* Transition effect for border */
+    width: 57%; /* Adjusted width for inputs */
+}
+
+/* On focus, change border color */
+.milk-details-container input:focus ,
+.health-details-container input:focus,
+.maternity-details-container input:focus {
+    border-color: #bd4141; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit Button */
+.milk-details-container button,
+.health-details-container button,
+.maternity-details-container button {
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 18px; /* Font size for button text */
+    color: #fff; /* Text color for button */
+    background-color: #bd4141; /* Background color for button */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect for background */
+}
+
+/* Hover effect for button */
+.milk-details-container button:hover,
+.health-details-container button:hover,
+.maternity-details-container button:hover {
+    background-color: #a83737; /* Darker shade on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .milk-details-container,
+    .health-details-container,
+    .maternity-details-container {
+        margin: 20px; /* Adjust margin for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .milk-details-container h2,
+    .health-details-container h2,
+    .maternity-details-container h2 {
+        font-size: 24px; /* Smaller font size for heading */
+    }
+
+    .milk-details-container input,
+    .health-details-container input,
+    .maternity-details-container input {
+        font-size: 14px; /* Smaller font size for inputs */
+    }
+
+    .milk-details-container button,
+    .health-details-container button,
+    .maternity-details-container button {
+        font-size: 16px; /* Smaller font size for button */
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex; /* Flexbox for layout */
+    justify-content: flex-end; /* Align items to the right */
+    padding-right: 1250px; /* Padding around the navbar */
+    background-color: #f8f8f8; /* Light background for navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+    margin-left: 0 60px;
+    z-index: 2;
+}
+
+.nav-buttons {
+    display: flex; /* Flexbox for button layout */
+    gap: 10px; /* Space between buttons */
+}
+
+.navbar button {
+    padding: 10px 15px; /* Padding for buttons */
+    font-size: 16px; /* Font size for button text */
+    color: #fff; /* Text color for buttons */
+    background-color: #bd4141; /* Background color for buttons */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect for background */
+    z-index: 2;
+}
+
+.navbar button:hover {
+    background-color: #a83737; /* Darker shade on hover */
+}
+
+
+.data-table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    text-align: center; /* Center text in both headers and cells */
+    border: 1px solid #ccc; /* Add borders for better visibility */
+    padding: 8px; /* Add padding for better spacing */
+}
+
+.data-table th {
+    background-color: #dbc6c6; /* Light background for headers */
+}
